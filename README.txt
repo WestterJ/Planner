@@ -1,18 +1,11 @@
-Planner Escolar Familiar — v1.0.1
+Planner Escolar Familiar — v1.0.3
 
-Conteúdo:
-- index.html: app HTML.
-- schema.sql: tabela compartilhada e políticas RLS.
-- README.txt: instruções.
+Correções:
+- O importador de PDF agora envia modo: edital para dynamic-service, usando o limite de texto longo já implementado (100.000 caracteres).
+- Para PDFs acima de 95.000 caracteres, apresenta mensagem orientando a dividir o documento, em vez de devolver erro genérico.
+- A versão visível foi atualizada para v1.0.3.
+- Fotos continuam usando o modo de imagem original.
+- Não é necessário executar SQL novamente.
 
-Configuração:
-1. Execute schema.sql no SQL Editor do projeto Supabase existente.
-2. Publique index.html junto ao supabase-config.js do seu app.
-3. Confirme os URLs em Authentication > URL Configuration.
-4. Crie/entre com as contas familiares.
-
-Backup JSON:
-A seção “Backup e restauração” permite exportar registros para JSON e importar um JSON de backup. A importação adiciona registros ao banco compartilhado; não apaga registros existentes. Recomenda-se exportar um backup antes de importar.
-
-IA:
-O botão de importação com IA usa a Edge Function dynamic-service existente. A compatibilidade deve ser validada no projeto publicado. PDFs precisam conter texto selecionável; para documentos digitalizados, use fotos.
+Publicação: substitua o index.html no repositório e mantenha supabase-config.js.
+Observação: esta versão corrige o limite imediato; a divisão automática em vários pedidos pode ser implementada em etapa posterior.
