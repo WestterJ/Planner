@@ -1,11 +1,8 @@
-Planner Escolar Familiar — v1.0.3
+Planner Escolar Familiar — v1.0.4
 
-Correções:
-- O importador de PDF agora envia modo: edital para dynamic-service, usando o limite de texto longo já implementado (100.000 caracteres).
-- Para PDFs acima de 95.000 caracteres, apresenta mensagem orientando a dividir o documento, em vez de devolver erro genérico.
-- A versão visível foi atualizada para v1.0.3.
-- Fotos continuam usando o modo de imagem original.
-- Não é necessário executar SQL novamente.
-
-Publicação: substitua o index.html no repositório e mantenha supabase-config.js.
-Observação: esta versão corrige o limite imediato; a divisão automática em vários pedidos pode ser implementada em etapa posterior.
+Correções: versão visível; quebras de linha do PDF e do aviso de importação; data de hoje enviada à IA; contador "Provas nesta semana" sempre da semana atual; Enter faz login; "Esqueci a senha".
+Fotos: modo "agenda" na função dynamic-service (resposta de até 8.000 tokens). A função já foi atualizada (v8) e continua compatível com os outros apps.
+Leitura de PDF: o texto agora preserva as quebras de linha e marca o início de cada página, o que ajuda a IA a ligar datas e conteúdos.
+Melhorias: quadro mostra só a disciplina (detalhes ao tocar no dia); cor por disciplina; botões Estudado/Realizada; "faltam X dias"/atrasada; mostrar provas passadas; sem duplicatas ao importar; atualiza ao voltar ao app; lista vertical no celular; PWA (manifest, sw.js, ícones).
+Publicação: envie index.html, sw.js, manifest.webmanifest, icon-192.png e icon-512.png; mantenha supabase-config.js.
+Para "Esqueci a senha": inclua a URL do app em Authentication > URL Configuration > Redirect URLs.
