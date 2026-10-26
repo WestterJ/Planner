@@ -1,8 +1,8 @@
-Planner Escolar Familiar — v1.0.4
+Planner Escolar Familiar — v1.1.0 (base: index_planner_escolar_v1_0_4.html)
 
-Correções: versão visível; quebras de linha do PDF e do aviso de importação; data de hoje enviada à IA; contador "Provas nesta semana" sempre da semana atual; Enter faz login; "Esqueci a senha".
-Fotos: modo "agenda" na função dynamic-service (resposta de até 8.000 tokens). A função já foi atualizada (v8) e continua compatível com os outros apps.
-Leitura de PDF: o texto agora preserva as quebras de linha e marca o início de cada página, o que ajuda a IA a ligar datas e conteúdos.
-Melhorias: quadro mostra só a disciplina (detalhes ao tocar no dia); cor por disciplina; botões Estudado/Realizada; "faltam X dias"/atrasada; mostrar provas passadas; sem duplicatas ao importar; atualiza ao voltar ao app; lista vertical no celular; PWA (manifest, sw.js, ícones).
-Publicação: envie index.html, sw.js, manifest.webmanifest, icon-192.png e icon-512.png; mantenha supabase-config.js.
+Módulos (abas): Início (cards, planner semanal, agenda do dia) · Registros (lista + cadastrar) · Importar (PDF/foto) · Configurações (backup e restauração).
+Popup: toque na disciplina no quadro semanal para ver conteúdos, plano e situação; dá para marcar Estudado/Realizada ou editar ali.
+Correções que faltavam nesta base: quebras de linha do PDF, data de hoje enviada à IA, modo "agenda" para fotos (função dynamic-service v8 já publicada), contador da semana atual, sem duplicatas ao importar, Enter no login, "Esqueci a senha", atualização ao voltar ao app.
+Extras: cor por disciplina, "faltam X dias"/atrasada, mostrar provas passadas, PWA.
+Publique: index.html, sw.js, manifest.webmanifest, icon-192.png, icon-512.png (mantenha supabase-config.js).
 Para "Esqueci a senha": inclua a URL do app em Authentication > URL Configuration > Redirect URLs.
